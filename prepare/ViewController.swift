@@ -11,13 +11,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     // ラベル
     @IBOutlet weak var faceLabel: UILabel!
+    @IBOutlet weak var faceLabel2: UILabel!
+    
     // フォーム
     @IBOutlet weak var form: UITextField!
+    @IBOutlet weak var form2: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // 消しとく
+        faceLabel.isHidden = true
+        faceLabel2.isHidden = true
+        
         form.delegate = self
+        form2.delegate = self
     }
 
     // フォームの入力可否
@@ -25,6 +33,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         true
     }
     
-    
+    // 入力状態になったらlabelを出す
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        switch textField.tag {
+        case 0:
+            faceLabel.isHidden = false
+        case 1:
+            faceLabel2.isHidden = false
+        default:
+            break
+        }
+    }
 }
 

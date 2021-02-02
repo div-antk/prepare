@@ -10,7 +10,7 @@
 		3B1DA05825C96971007839BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DA05725C96971007839BE /* AppDelegate.swift */; };
 		3B1DA05A25C96971007839BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DA05925C96971007839BE /* SceneDelegate.swift */; };
 		3B1DA05C25C96971007839BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DA05B25C96971007839BE /* ViewController.swift */; };
-		3B1DA05F25C96971007839BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1DA05D25C96971007839BE /* Main.storyboard */; };
+		3B1DA05F25C96971007839BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1DA05D25C96971007839BE /* Main.storyboard */; settings = {ASSET_TAGS = (form, ); }; };
 		3B1DA06125C96974007839BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1DA06025C96974007839BE /* Assets.xcassets */; };
 		3B1DA06425C96974007839BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1DA06225C96974007839BE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -93,6 +93,9 @@
 		3B1DA04C25C96971007839BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					form,
+				);
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
